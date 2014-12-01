@@ -50,13 +50,13 @@ or in `clientlaunch.cfg` (Xymon)
 Sample graphs:
 --------------
 
-![Varnish Connections](https://raw.github.com/ZeWaren/xymon-varnish-counters/master/example_graphs/varnish_connections.png "Varnish Connections")
+![Varnish Connections](https://raw.github.com/ZeWaren/xymon-varnish/master/example_graphs/varnish_connections.png "Varnish Connections")
 
-![Varnish Requests](https://raw.github.com/ZeWaren/xymon-varnish-counters/master/example_graphs/varnish_requests.png "Varnish Requests")
+![Varnish Requests](https://raw.github.com/ZeWaren/xymon-varnish/master/example_graphs/varnish_requests.png "Varnish Requests")
 
-![Varnish Cache](https://raw.github.com/ZeWaren/xymon-varnish-counters/master/example_graphs/varnish_cache.png "Varnish Cache")
+![Varnish Cache](https://raw.github.com/ZeWaren/xymon-varnish/master/example_graphs/varnish_cache.png "Varnish Cache")
 
-![Varnish Backend Connections](https://raw.github.com/ZeWaren/xymon-varnish-counters/master/example_graphs/varnish_backend_connections.png "Varnish Backend Connections")
+![Varnish Backend Connections](https://raw.github.com/ZeWaren/xymon-varnish/master/example_graphs/varnish_backend_connections.png "Varnish Backend Connections")
 
 Credits:
 --------
