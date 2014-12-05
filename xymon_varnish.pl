@@ -16,27 +16,27 @@ $data = decode_json($data);
 
 my $trends = "
 [varnish_backend_connections.rrd]
-DS:conn:COUNTER:600:0:U ".$data->{'backend_conn'}->{'value'}."
-DS:unhealthy:COUNTER:600:0:U ".$data->{'backend_unhealthy'}->{'value'}."
-DS:busy:COUNTER:600:0:U ".$data->{'backend_busy'}->{'value'}."
-DS:fail:COUNTER:600:0:U ".$data->{'backend_fail'}->{'value'}."
-DS:reuse:COUNTER:600:0:U ".$data->{'backend_reuse'}->{'value'}."
-DS:toolate:COUNTER:600:0:U ".$data->{'backend_toolate'}->{'value'}."
-DS:retry:COUNTER:600:0:U ".$data->{'backend_retry'}->{'value'}."
-DS:recycle:COUNTER:600:0:U ".$data->{'backend_recycle'}->{'value'}."
+DS:conn:DERIVE:600:0:U ".$data->{'backend_conn'}->{'value'}."
+DS:unhealthy:DERIVE:600:0:U ".$data->{'backend_unhealthy'}->{'value'}."
+DS:busy:DERIVE:600:0:U ".$data->{'backend_busy'}->{'value'}."
+DS:fail:DERIVE:600:0:U ".$data->{'backend_fail'}->{'value'}."
+DS:reuse:DERIVE:600:0:U ".$data->{'backend_reuse'}->{'value'}."
+DS:toolate:DERIVE:600:0:U ".$data->{'backend_toolate'}->{'value'}."
+DS:retry:DERIVE:600:0:U ".$data->{'backend_retry'}->{'value'}."
+DS:recycle:DERIVE:600:0:U ".$data->{'backend_recycle'}->{'value'}."
 
 [varnish_connections.rrd]
-DS:conn:COUNTER:600:0:U ".$data->{'client_conn'}->{'value'}."
-DS:drop:COUNTER:600:0:U ".$data->{'client_drop'}->{'value'}."
+DS:conn:DERIVE:600:0:U ".$data->{'client_conn'}->{'value'}."
+DS:drop:DERIVE:600:0:U ".$data->{'client_drop'}->{'value'}."
 
 [varnish_requests.rrd]
-DS:req:COUNTER:600:0:U ".$data->{'client_req'}->{'value'}."
-DS:backend_req:COUNTER:600:0:U ".$data->{'backend_req'}->{'value'}."
+DS:req:DERIVE:600:0:U ".$data->{'client_req'}->{'value'}."
+DS:backend_req:DERIVE:600:0:U ".$data->{'backend_req'}->{'value'}."
 
 [varnish_cache.rrd]
-DS:hit:COUNTER:600:0:U ".$data->{'cache_hit'}->{'value'}."
-DS:hitpass:COUNTER:600:0:U ".$data->{'cache_hitpass'}->{'value'}."
-DS:miss:COUNTER:600:0:U ".$data->{'cache_miss'}->{'value'}."
+DS:hit:DERIVE:600:0:U ".$data->{'cache_hit'}->{'value'}."
+DS:hitpass:DERIVE:600:0:U ".$data->{'cache_hitpass'}->{'value'}."
+DS:miss:DERIVE:600:0:U ".$data->{'cache_miss'}->{'value'}."
 ";
 
 my $host = $ENV{MACHINEDOTS};
